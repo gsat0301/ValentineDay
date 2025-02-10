@@ -1,0 +1,112 @@
+:root{
+    --heart-color: #305CDE;
+    --hover-color: #C1275C;
+    --background-color: #ebc8c0;
+    --white: #fff;
+}
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color: var(--background-color);
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+flex-direction: column;
+background-image: url('images/kittyBack.png');
+background-size: 100%;
+object-fit: cover   ;
+width: 100vw;
+}
+.card {
+border-radius: 15px;
+padding: 20px;
+text-align: center;
+height: 100vh;
+}
+.title {
+    color: #fff;
+font-size: 22px;
+margin-top: 0;
+padding: 25px 50px 25px 50px;
+background-color:#305CDE ;
+border-radius: 15px ;
+box-shadow: 0px 0px 15px #305CDE;
+border: solid pink;
+}
+.heart {
+width: 200px;
+height: 200px;
+position: relative;
+display: inline-block;
+margin-bottom: 15px;
+background-repeat:  no-repeat;
+background-size: 100%;
+}
+
+.button {
+background-color: var(--heart-color);
+color: var(--white);
+border: none;
+padding: 10px 20px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+margin: 10px 2px;
+cursor: pointer;
+border-radius: 5px;
+width: 80px;
+border: solid pink;
+}
+
+.button:hover{
+    background-color: #C1275C;
+    color: #fff;
+    transition: 0.3s;
+
+}
+.button:active{
+    background-color: #C1275C;
+    color: #fff;
+
+}
+.button.button__negative{
+background-color: var(--heart-color);
+color: #fff;
+}
+
+.button.button__negative:hover{
+    background-color: #C1275C;
+    color: #fff;
+
+
+}
+
+.button.button__negative:active{
+    background-color: #C1275C;
+    color: #fff;
+
+
+}
+.button.button__error{
+width: 100%;
+display: none;
+}
+.button:focus {
+outline: none;
+}
+.text {
+   background-color: #305CDE;
+   color: #fff;
+   border: solid pink;
+   border-radius: 20px;
+font-size: 20px;
+margin-top: 30px;
+padding: 25px;
+}
+.img-fluid {
+width: 100%;
+
+height: 100%;
+}
